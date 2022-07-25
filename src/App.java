@@ -20,9 +20,9 @@ public class App {
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
 
         for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
-            System.out.println(filme.get("imDbRating"));
+            System.out.println("\u001b[1m Titulo: \u001b[0m" + filme.get("title"));
+            System.out.println("\u001b[1m Poster: \u001b[0m" + filme.get("image"));
+            System.out.println("\u001b[44m \u001b[32m \u001b[1m Avaliação: " + filme.get("imDbRating") + " \u001b[0m" );
             System.out.println();
         }
         
